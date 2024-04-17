@@ -5,7 +5,8 @@ import (
 	"github.com/thguitar/gopportunities.git/handler"
 )
 
-func initializeRouters(router *gin.Engine) {
+func InitializeRouters(router *gin.Engine) {
+	handler.InitializeHandler()
 	v1 := router.Group("/api/v1")
 	{
 		v1.GET("/opening", handler.ShowOpeningHandler)
