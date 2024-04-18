@@ -26,5 +26,5 @@ type OpeningResponse struct {
 	Location  string    `json:"location"`
 	Remote    bool      `json:"remote"`
 	Link      string    `json:"link"`
-	Salary    int64     `json:"salar"`
+	Salary    int64     `json:"salary"`
 }
