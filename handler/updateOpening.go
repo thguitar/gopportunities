@@ -7,6 +7,20 @@ import (
 	"github.com/thguitar/gopportunities.git/schemas"
 )
 
+// @BasePath /api/v1
+
+// @Sumary Update opening
+// @Description Update a new job opening
+// @Tag Openings
+// @Accept json
+// @Produce json
+// @Param id query string true "Opening identification"
+// @Param opening body UpdateOpeningRequest true "Opening data to Update"
+// @Success 200 {object} UpdateOpeningResponse
+// @Failure 400 {object} ErrorResponse
+// @Failure 404 {object} ErrorResponse
+// @Failure 500 {object} ErrorResponse
+// @Router /opening [put]
 func UpdateOpeningHandler(ctx *gin.Context) {
 	request := UpdateOpeningRequest{}
 
